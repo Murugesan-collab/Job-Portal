@@ -1,0 +1,130 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5c899d;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  color:black;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  display: block;
+}
+
+.navbar-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.navbar-user {
+  color: #667eea;
+  padding: 10px 15px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.navbar-button {
+  background: white;
+  color: #667eea;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .navbar-menu {
+    gap: 2px;
+  }
+
+  .navbar-link {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .navbar-button {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .navbar-link,
+  .navbar-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .navbar-user {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
